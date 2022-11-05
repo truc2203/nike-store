@@ -33,7 +33,14 @@ const Carousel = ({ heroapi }) => {
                     />
                 ))}
             </div>
-            <div className=""></div>
+            <div className="grid items-center absolute top-[33vh] lg:top-[27vh] right-0 gap-3">
+              {sociallinks?.map((value,i) => (
+                <Socials
+                  key={i}
+                  icon={value.icon}
+                />
+              ))}
+            </div>
           </div>
           <div className="">
             <img
