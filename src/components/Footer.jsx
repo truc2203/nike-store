@@ -4,7 +4,6 @@ import { useState } from "react";
 
 const Footer = ({ footerAPI: { titles, links } }) => {
   const [year, setYear] = useState();
-  console.log(year);
   useEffect(() => {
     const getYear = () => {
       setYear(new Date().getFullYear());
