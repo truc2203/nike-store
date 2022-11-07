@@ -1,4 +1,6 @@
 export {default as Carousel} from './Carousel.jsx'
 export {default as Sales} from './Sales.jsx'
 export {default as FlexContent} from './FlexContent.jsx'
-export {default as Stories} from './Stories'
+export {default as Stories} from './Stories.jsx'
+export {default as Footer} from './Footer.jsx'
+import {default as Navbar} from './Navbar.jsx'

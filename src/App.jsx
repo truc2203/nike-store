@@ -1,9 +1,11 @@
 import React from 'react'
-import { Carousel, FlexContent, Sales, Stories } from './components'
-import { heroapi,popularsales,toprateslaes,highlight,sneaker,story } from './data/data'
+import { Carousel, FlexContent, Footer, Sales, Stories } from './components'
+import Navbar from './components/Navbar'
+import { heroapi,popularsales,toprateslaes,highlight,sneaker,story,footerAPI } from './data/data'
 const App = () => {
   return (
    <>
+   <Navbar/>
     <main className='flex flex-col gap-16 relative'>
       <Carousel heroapi={heroapi}/>
       <Sales endpoint={popularsales} ifExists/>
@@ -12,6 +14,8 @@ const App = () => {
       <FlexContent endpoint={sneaker}/>
       <Stories story={story} />
     </main>
+    <Footer footerAPI={footerAPI}/>
+
    </>
   )
 }
